@@ -1,0 +1,16 @@
+.addForm {
+  $height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px 30px;
+  z-index: 1;
+  input[type='text'] {
+    width: 100%;
+    height: $height;
+  }
+  button {
+    height: $height;
+    min-width: $height;
+  }
+}

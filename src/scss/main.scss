@@ -1,0 +1,50 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $main-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
+}
+
+input {
+  outline: none;
+  font-family: $main-font;
+}
+
+button {
+  outline: none;
+  width: 50px;
+  cursor: pointer;
+  &:hover {
+    background: darken($main-color, 15%);
+  }
+  &:active {
+    background: darken($main-color, 5%);
+  }
+}
+
+.basic {
+  border: none;
+  padding: 0;
+  font-size: 30px;
+  line-height: 30px;
+  background: $main-color;
+  transition: 0.1s ease-in;
+}
+
+input[type='text'] {
+  padding: 0 10px;
+  color: $text-color;
+  font-weight: lighter;
+  &:focus {
+    background: darken($main-color, 15%);
+    color: darken($text-color, 15%);
+  }
+}
+
